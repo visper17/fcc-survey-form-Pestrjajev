@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transport Company Customer Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="survey-container">
+    <h1 id="title">Transport Company Customer Survey</h1>
+    <p id="description">
+      We value your feedback! Please fill out this survey to help us improve our transport services.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your full name" 
+        required
+      >
+
+      <label id="email-label" for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email address" 
+        required
+      >
+
+      <label id="number-label" for="number">Customer Number:</label>
+      <input 
+        type="number" 
+        id="number" 
+        name="customer-number" 
+        min="1000" 
+        max="9999" 
+        placeholder="Enter your 4-digit customer number"
+        required
+      >
+
+      <label for="dropdown">Type of Transport Service:</label>
+      <select id="dropdown" name="service-type" required>
+        <option value="">Select your service</option>
+        <option value="freight">Freight Delivery</option>
+        <option value="express">Express Courier</option>
+        <option value="logistics">Logistics Solution</option>
+      </select>
+
+      <fieldset class="radio-group">
+        <legend>How satisfied are you with our delivery times?</legend>
+        <label>
+          <input type="radio" name="delivery-satisfaction" value="very-satisfied" required>
+          Very satisfied
+        </label>
+        <label>
+          <input type="radio" name="delivery-satisfaction" value="satisfied">
+          Satisfied
+        </label>
+        <label>
+          <input type="radio" name="delivery-satisfaction" value="neutral">
+          Neutral
+        </label>
+        <label>
+          <input type="radio" name="delivery-satisfaction" value="unsatisfied">
+          Unsatisfied
+        </label>
+      </fieldset>
+
+      <fieldset class="checkbox-group">
+        <legend>Select the services you used (check all that apply):</legend>
+        <label>
+          <input type="checkbox" name="used-services" value="booking">
+          Online Booking
+        </label>
+        <label>
+          <input type="checkbox" name="used-services" value="tracking">
+          Cargo Tracking
+        </label>
+        <label>
+          <input type="checkbox" name="used-services" value="customer-support">
+          Customer Support
+        </label>
+        <label>
+          <input type="checkbox" name="used-services" value="insurance">
+          Shipment Insurance
+        </label>
+      </fieldset>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea 
+        id="comments" 
+        name="comments" 
+        placeholder="Let us know your thoughts or suggestions!"
+      ></textarea>
+
+      <button type="submit" id="submit">Submit Survey</button>
+    </form>
+  </div>
+</body>
+</html>

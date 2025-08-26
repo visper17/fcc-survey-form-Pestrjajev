@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-image: url('https://cdn.create.vista.com/api/media/medium/606910836/stock-photo-semi-truck-cargo-trailer-driving-highway-hauling-goods-evening-delivery?token=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #222;
+}
+.survey-container {
+  background: rgba(255, 255, 255, 0.92);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+}
+#title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 2.2rem;
+  color: #1558b0;
+}
+#description {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 1.15rem;
+  color: #333;
+}
+label, legend {
+  font-weight: bold;
+  margin-bottom: 7px;
+  display: block;
+  color: #1558b0;
+}
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  background: #f8f8f8;
+}
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.radio-group, .checkbox-group {
+  margin-bottom: 20px;
+  border: none;
+  padding: 0;
+}
+.radio-group label, .checkbox-group label {
+  font-weight: normal;
+  color: #1d1d1d;
+  margin-right: 18px;
+  display: inline-block;
+}
+button#submit {
+  background: #1558b0;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(21,88,176,0.08);
+}
+button#submit:hover {
+  background: #0f407d;
+}
+@media (max-width: 700px) {
+  .survey-container {
+    padding: 15px 7vw;
+  }
+}
